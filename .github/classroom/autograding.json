@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "test2",
+      "setup": "",
+      "run": "python main.py",
+      "input": "2 3 4 5\r\n1 1 1 1",
+      "output": "14\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 25
+    },
+    {
+      "name": "test1",
+      "setup": "",
+      "run": "python main.py",
+      "input": "1 2 3\r\n3 2 1",
+      "output": "10\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 25
+    },
+    {
+      "name": "test3",
+      "setup": "",
+      "run": "python main.py",
+      "input": "7\r\n7",
+      "output": "49\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 25
+    },
+    {
+      "name": "test4",
+      "setup": "",
+      "run": "python main.py",
+      "input": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15\r\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 0",
+      "output": "0\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 25
+    }
+  ]
+}
