@@ -13,22 +13,25 @@ if __name__ == '__main__':
 
     # list1 = [int(digit) for digit in input("Provide a series of integers with no spaces in between each: ")]
     # list2 = [int(digit) for digit in input("Provide another series of the same length and format: ")]
+    string1 = input("Provide a series of integers with spaces in between each: ")
+    string2 = input("Provide another series of the same length and format: ")
 
-    for digit in input("Provide a series of integers with no spaces in between each: "):
-        if digit.isspace():
-            continue
-        else: 
-            list1.append(int(digit))
-    for digit in input("Provide another series of the same length and format: "):
-        if digit.isspace():
-            continue
-        else:
-            list2.append(int(digit))
+    list1str = string1.split()
+    list2str = string2.split()
+
+    for digit in list1str: 
+        list1.append(int(digit))
+    for digit in list2str:
+        list2.append(int(digit))
 
     if len(list1) != len(list2):
         print('Error: each series must be the same length')
     else:
         print(sum_of_products(list1, list2))
+
+
+# read in the strings first
+# then split on whitespace .split()
 
 
 
