@@ -15,12 +15,12 @@ if __name__ == '__main__':
     # list2 = [int(digit) for digit in input("Provide another series of the same length and format: ")]
 
     for digit in input("Provide a series of integers with no spaces in between each: "):
-        if digit == ' ':
+        if digit.isspace():
             continue
         else: 
             list1.append(int(digit))
     for digit in input("Provide another series of the same length and format: "):
-        if digit == ' ':
+        if digit.isspace():
             continue
         else:
             list2.append(int(digit))
