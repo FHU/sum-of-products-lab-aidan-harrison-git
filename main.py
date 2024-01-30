@@ -6,6 +6,7 @@ def sum_of_products(list1, list2):
         total += (number*list2[counter])
         counter += 1
     return total
+
 if __name__ == '__main__':
     list1 = [] 
     list2 = []  
@@ -14,8 +15,12 @@ if __name__ == '__main__':
     # list2 = [int(digit) for digit in input("Provide another series of the same length and format: ")]
 
     for digit in input("Provide a series of integers with no spaces in between each: "):
+        if digit == ' ':
+            continue
         list1.append(int(digit))
     for digit in input("Provide another series of the same length and format: "):
+        if digit == ' ':
+            continue
         list2.append(int(digit))
 
     if len(list1) != len(list2):
