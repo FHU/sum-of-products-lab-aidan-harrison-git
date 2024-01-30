@@ -17,11 +17,13 @@ if __name__ == '__main__':
     for digit in input("Provide a series of integers with no spaces in between each: "):
         if digit == ' ':
             continue
-        list1.append(int(digit))
+        else: 
+            list1.append(int(digit))
     for digit in input("Provide another series of the same length and format: "):
         if digit == ' ':
             continue
-        list2.append(int(digit))
+        else:
+            list2.append(int(digit))
 
     if len(list1) != len(list2):
         print('Error: each series must be the same length')
