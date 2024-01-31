@@ -7,18 +7,9 @@ def sum_of_products(list1, list2):
         counter += 1
     return total
 
-string1 = input("Provide a series of integers with spaces in between each: ")
-string2 = input("Provide another series of the same length and format: ")
-
-list1str = string1.split()
-list2str = string2.split()
-
 if __name__ == '__main__':
     list1 = [] 
     list2 = []  
-
-    # list1 = [int(digit) for digit in input("Provide a series of integers with no spaces in between each: ")]
-    # list2 = [int(digit) for digit in input("Provide another series of the same length and format: ")]
 
     string1 = str(input())
     string2 = str(input())
