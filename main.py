@@ -18,14 +18,14 @@ if __name__ == '__main__':
 
     list1str = string1.split()
     list2str = string2.split()
-
+    
     for digit in list1str: 
         list1.append(int(digit))
     for digit in list2str:
         list2.append(int(digit))
 
     if len(list1) != len(list2):
-        print('Error: each series must be the same length')
+        raise ValueError('Error - series 1 and 2 must be equal in length')
     else:
         print(sum_of_products(list1, list2))
 
