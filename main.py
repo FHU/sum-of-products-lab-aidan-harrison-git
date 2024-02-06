@@ -30,6 +30,8 @@ if __name__ == '__main__':
 # read in the strings first
 # then split on whitespace .split()
 
+# noticed skipped check
+
 
 
 
